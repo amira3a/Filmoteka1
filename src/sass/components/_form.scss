@@ -1,0 +1,45 @@
+@use '../utilities/variables';
+
+.header__form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.header__form {
+  width: 280px;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.5px solid #ffff;
+}
+
+.header__input {
+  width: 100%;
+  border-style: hidden;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: variables.$primary-text-color;
+  background: transparent;
+  outline: none;
+  padding: 4px;
+}
+
+::placeholder {
+  color: var(--primary-text-color);
+}
+
+.header__no-match {
+  margin-top: 22px;
+  display: none;
+}
+
+.header__no-match-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  justify-content: center;
+  color: #ff001b;
+}

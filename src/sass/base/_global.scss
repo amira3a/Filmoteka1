@@ -1,0 +1,39 @@
+@use '../utilities/variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto";
+  background: variables.$primary-text-color;
+  color: variables.$primary-text-color;
+  margin: 0;
+  cursor: default;
+}
+
+ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  aspect-ratio: auto;
+  object-fit: cover;
+}
+
+button {
+  cursor: pointer;
+}
+

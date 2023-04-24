@@ -1,0 +1,104 @@
+@use '../utilities/variables';
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)), url("../images/header-mobile-1x.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    background-size: cover;
+    width: 100%;
+    height: 230px;
+}
+
+.header__container {
+    padding: 46px 20px 97px 20px;
+    margin: 0 auto;
+}
+
+.header__bar {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width: 320px) {
+
+    .header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)), url("../images/header-mobile-1x.webp");
+        margin-bottom: 20px;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .header {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)), url("../images/header-mobile-2x.webp");
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header__input {
+        width: 336px;
+    }
+
+    .header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
+            url("../images/header-tablet-1x.webp");
+        margin-bottom: 60px;
+
+        &__container {
+            padding: 46px 75px 97px 70px;
+        }
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .header {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
+                    url("../images/header-tablet-2x.webp");
+            }
+        }
+
+        &__logo-text {
+            display: flex;
+        }
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header__input {
+        width: 336px;
+    }
+
+    .header {
+
+        background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
+            url("../images/header-desktop-1x.webp");
+
+        .header__container {
+            max-width: 1024px;
+            padding: 46px 75px 97px 70px;
+        }
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .header {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
+                    url("../images/header-desktop-2x.webp");
+            }
+        }
+
+        .header__logo {
+            display: flex;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@use '../utilities/variables';
+
+.header__logo-text {
+  display: none;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  color: variables.$primary-text-color;
+  margin-right: 190px;
+  margin-left: 10px;
+}
+
+.header__filmSvg {
+  display: flex;
+  fill: variables.$primary-text-color;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}

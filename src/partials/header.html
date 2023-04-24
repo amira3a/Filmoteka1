@@ -1,0 +1,56 @@
+<header class="header">
+  <div class="header__container">
+    <div class="header__bar">
+      <div class="logos">
+        <a class="header__logo log" href="index.html"
+          aria-label="Link to Filmoteka home page">
+          <svg class="header__filmSvg" width="24" height="24">
+            <use href="./images/sprite.svg#icon-film"></use>
+          </svg>
+          <span class="header__logo-text">Filmoteka</span>
+        </a>
+      </div>
+      <div class="darkMode-button">
+        <div class="dark-mode-switch" role="switch" tabindex="0" aria-checked="false" aria-label="Toggle dark mode">
+          <div class="dark-mode-switch-knob"></div>
+        </div>
+      </div>
+      <nav calss="nav-links">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link home-link active" href="#">HOME</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link library-link" href="#"
+              aria-label="Link to My Library of watched and queued movies">MY LIBRARY</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__form-container">
+      <form class="header__form">
+        <input class="header__input" type="text" name="text" placeholder="Search movie" />
+        <svg class="header__svg" width="12" height="12">
+          <use href="./images/sprite.svg#icon-search"></use>
+        </svg>
+      </form>
+    </div>
+    <div class="header__no-match">
+      <h3 class="header__no-match-text">
+        Search result not successful. Enter the correct movie name
+      </h3>
+    </div>
+    <div class="header__buttons-container">
+      <button type="button" id="mylibWat" class="library_button library__button-watched"
+        aria-label="button to watched list of movies">
+        Watched
+      </button>
+      <button type="button" id="mylibqueue" class="library_button library__button-queue active-btn"
+        aria-label="button to queued list of movies">
+        queue
+      </button>
+    </div>
+  </div>
+</header>
+
+<script src="./js/dark-mode.js"></script>

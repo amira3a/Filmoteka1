@@ -1,0 +1,77 @@
+
+.mylibrary-gallery {
+  display: none;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center;
+  grid-gap: 30px;
+  margin: 0 20px 40px;
+
+  .movie-poster {
+    width: 280px;
+    height: 398px;
+    border-radius: 5px;
+    align-items: center;
+    position: relative;
+  }
+
+  .movie_info {
+    text-align: left;
+  }
+
+  .movie_title {
+    margin: 10px 0 3px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Roboto';
+    font-style: normal;
+    color: $primary-title-color;
+    text-transform: uppercase;
+
+  }
+
+  .movie_genre {
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 500;
+    color: $secondary-title-color;
+  }
+
+
+  .movie_release-date {
+    display: inline-block;
+    padding-left: 5px;
+    border-left: 1px solid $secondary-title-color;
+    font-size: 15px;
+    font-weight: 500;
+    color: $secondary-title-color;
+  }
+}
+
+.no-storage {
+  color: black;
+  text-align: center;
+}
+
+
+@media screen and (min-width: 768px) {
+  .card-gallery {
+    margin: 0 75px 50px;
+
+    .movie-poster {
+      width: 294px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card-gallery {
+    margin: 0 71px 50px;
+
+    .movie-poster {
+      width: 274px;
+    }
+  }
+}
